@@ -56,7 +56,9 @@ module dut_processing_control #(
   output logic                              in2_arb_mode_id_en,
 
   // first cycle indicator
-  output logic                              first_cycle_of_proc_req
+  output logic                              first_cycle_of_proc_req,
+  input logic                               VDD,
+  input logic                               VSS
 );
 
   //===========================================================================

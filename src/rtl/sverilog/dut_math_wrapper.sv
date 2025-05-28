@@ -20,7 +20,9 @@ module dut_math_wrapper #(
   //output interface:
   output logic            [FIFO_WIDTH-1:0] fifo_data,
   output logic                             fifo_we,
-  input  logic                             fifo_full
+  input  logic                             fifo_full,
+  input logic                               VDD,
+  input logic                               VSS
 );
 
 

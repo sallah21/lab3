@@ -65,7 +65,9 @@ module dut_toplevel #(
   input logic                               out_ready,                         // ready flag
   output logic             [DATA_WIDTH-1:0] out_data,                          // data
   output logic  [IN_INTERFACE_ID_WIDTH-1:0] out_data_source_id,                // source ID (indicator of an input interface from which the data is taken)
-  output logic                              out_data_last                      // indicator of last data in a frame
+  output logic                              out_data_last,                     // indicator of last data in a frame
+  input logic                               VDD,
+  input logic                               VSS
 );
 
   //===========================================================================
@@ -183,7 +185,9 @@ module dut_toplevel #(
     .in1_arb_mode_id_en                (in1_arb_mode_id_en_c),
     .in2_arb_mode_id_en                (in2_arb_mode_id_en_c),
   
-    .first_cycle_of_proc_req           (first_cycle_of_proc_req_c)
+    .first_cycle_of_proc_req           (first_cycle_of_proc_req_c),
+    .VDD                               (VDD),
+    .VSS                               (VSS)
   
   );
 
@@ -209,7 +213,9 @@ module dut_toplevel #(
     .in_valid_arb                      (in0_valid_c),
     .in_data_arb                       (in0_data_c),
     .in_data_last_arb                  (in0_data_last_c),
-    .arb_in_transferring               (arb_in0_transferring_c)
+    .arb_in_transferring               (arb_in0_transferring_c),
+    .VDD                               (VDD),
+    .VSS                               (VSS)
   );
 
   //===========================================================================
@@ -234,7 +240,9 @@ module dut_toplevel #(
     .in_valid_arb                      (in1_valid_c),
     .in_data_arb                       (in1_data_c),
     .in_data_last_arb                  (in1_data_last_c),
-    .arb_in_transferring               (arb_in1_transferring_c)
+    .arb_in_transferring               (arb_in1_transferring_c),
+    .VDD                               (VDD),
+    .VSS                               (VSS)
   );
 
   //===========================================================================
@@ -259,7 +267,9 @@ module dut_toplevel #(
     .in_valid_arb                      (in2_valid_c),
     .in_data_arb                       (in2_data_c),
     .in_data_last_arb                  (in2_data_last_c),
-    .arb_in_transferring               (arb_in2_transferring_c)
+    .arb_in_transferring               (arb_in2_transferring_c),
+    .VDD                               (VDD),
+    .VSS                               (VSS)
   );
 
   //===========================================================================
@@ -307,7 +317,9 @@ module dut_toplevel #(
     .arb_data_source_id                (arb_data_source_id_c),
     .arb_data_last                     (arb_data_last_c),
     .arb_data_valid                    (arb_data_valid_c),
-    .arb_data_ready                    (arb_data_ready_c)
+    .arb_data_ready                    (arb_data_ready_c),
+    .VDD                               (VDD),
+    .VSS                               (VSS)
   );
 
   //===========================================================================
@@ -331,7 +343,9 @@ module dut_toplevel #(
     //output interface:
     .fifo_data                         (fifo_wdata_c),
     .fifo_we                           (fifo_we_c),
-    .fifo_full                         (fifo_full_c)
+    .fifo_full                         (fifo_full_c),
+    .VDD                               (VDD),
+    .VSS                               (VSS)
   );
 
   //===========================================================================
@@ -352,7 +366,9 @@ module dut_toplevel #(
     
     .fifo_re                           (fifo_re_c),
     .fifo_rdata                        (fifo_rdata_packed_c),
-    .fifo_empty                        (fifo_empty_c)
+    .fifo_empty                        (fifo_empty_c),
+    .VDD                               (VDD),
+    .VSS                               (VSS)
     );
 
 
@@ -377,7 +393,9 @@ module dut_toplevel #(
     .out_data                          (out_data_c),
     .out_data_source_id                (out_data_source_id_c),
     .out_data_last                     (out_data_last_c),
-    .out_last_data_sent                (out_last_data_sent_c)              // indicator that last output data has been sent out in a given frame - register
+    .out_last_data_sent                (out_last_data_sent_c),// indicator that last output data has been sent out in a given frame - register
+    .VDD                               (VDD),
+    .VSS                               (VSS)              
   );
 
   //===========================================================================

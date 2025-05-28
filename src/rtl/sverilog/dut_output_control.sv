@@ -47,7 +47,9 @@ module dut_output_control #(
   output logic             [DATA_WIDTH-1:0] out_data,
   output logic  [IN_INTERFACE_ID_WIDTH-1:0] out_data_source_id,
   output logic                              out_data_last,
-  output logic                              out_last_data_sent              // indicator that last output data has been sent out in a given frame - register
+  output logic                              out_last_data_sent,              // indicator that last output data has been sent out in a given frame - register
+  input logic                               VDD,
+  input logic                               VSS
 );
 
   //===========================================================================

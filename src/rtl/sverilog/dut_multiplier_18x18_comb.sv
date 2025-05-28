@@ -1,7 +1,9 @@
 module dut_multiplier_18x18_comb (
   input  logic[17:0] a,
   input  logic[17:0] b,
-  output logic[35:0] result
+  output logic[35:0] result,
+  input logic                               VDD,
+  input logic                               VSS
 );
 
   //===========================================================================

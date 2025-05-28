@@ -43,7 +43,9 @@ module dut_input_channel_control #(
   output logic                               in_valid_arb,                         // valid flag
   output logic              [DATA_WIDTH-1:0] in_data_arb,                          // data
   output logic                               in_data_last_arb,                      // indicator of last data in a frame
-  input logic                                arb_in_transferring            // indicator of arbitrating of a transfer from the input interface 0
+  input logic                                arb_in_transferring,            // indicator of arbitrating of a transfer from the input interface 0,
+  input logic                                VDD,
+  input logic                                VSS
 );
 
   //===========================================================================

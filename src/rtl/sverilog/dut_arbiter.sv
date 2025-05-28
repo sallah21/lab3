@@ -66,7 +66,9 @@ module dut_arbiter #(
   output logic[IN_INTERFACE_ID_WIDTH-1:0]   arb_data_source_id,
   output logic                              arb_data_last,
   output logic                              arb_data_valid,
-  input logic                               arb_data_ready
+  input logic                               arb_data_ready,
+  input logic                               VDD,
+  input logic                               VSS
 );
 
   //===========================================================================

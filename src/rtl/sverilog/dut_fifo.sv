@@ -44,7 +44,9 @@ module dut_fifo #(
   // read interface
   input logic fifo_re,
   output logic[FIFO_WIDTH-1:0] fifo_rdata,
-  output logic fifo_empty
+  output logic fifo_empty,
+  input logic                               VDD,
+  input logic                               VSS
 );
 
   // other local parameters
