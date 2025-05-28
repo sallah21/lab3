@@ -1,2 +1,6 @@
 *.log
 *.txt
+*.svf
+HDL_LIBRARIES/
+!4_2_report_power.txt
+*.dlib

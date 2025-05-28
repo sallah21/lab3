@@ -1,0 +1,89 @@
+Information: Corner Typical: no PVT mismatches. (PVT-032)
+Warning: No valid clocks available in mode 'Normal'. Setting clock frequency to 1 GHz. (POW-034)
+****************************************
+Report : power
+        -significant_digits 2
+Design : dut_toplevel
+Version: V-2023.12
+Date   : Wed May 28 12:36:04 2025
+****************************************
+Information: Activity propagation will be performed for scenario Normal_Typical.
+Information: Doing activity propagation for mode 'Normal' and corner 'Typical' with effort level 'medium'. (POW-024)
+Information: Timer-derived activity data is cached on scenario Normal_Typical (POW-052)
+Warning: No valid clocks available in mode 'Normal'. Setting clock frequency to 1 GHz. (POW-034)
+Infomation: Fast mode activity propagation power.rtl_activity_annotation setup is ignored. Always use accurate mode.
+Information: Running switching activity propagation with 12 threads!
+
+ **** Information : No. of simulation cycles = 6 ****
+Information: The stitching and editing of coupling caps is turned OFF for design 'dut_toplevel.dlib:dut_toplevel/compile_flow.design'. (TIM-125)
+Warning: No physical information exists for design 'dut_toplevel'. Zero interconnect delay is used in timing analysis. (TIM-101)
+Warning: The extractor can not be initialized for design 'dut_toplevel'. Zero interconnect delay is used in timing analysis. (TIM-102)
+Warning: Batch extraction is skipped for block "dut_toplevel"
+Information: Update timing completed net estimation for all the timing graph nets (TIM-111)
+Information: Net estimation statistics: timing graph nets = 1643, routed nets = 0, across physical hierarchy nets = 0, parasitics cached nets = 0, delay annotated nets = 0, parasitics annotated nets = 0, multi-voltage nets = 0. (TIM-112)
+************************************************************
+Timer Settings:
+Delay Calculation Style:                   auto
+Signal Integrity Analysis:                 disabled
+Timing Window Analysis:                    disabled
+Advanced Waveform Propagation:             disabled
+Variation Type:                            fixed_derate
+Clock Reconvergence Pessimism Removal:     disabled
+Advanced Receiver Model:                   disabled
+LLE:                                       disabled
+ML Acceleration:                           off
+************************************************************
+Mode: Normal
+Corner: Typical
+Scenario: Normal_Typical
+Voltage: 0.80
+Temperature: 25.00
+
+Voltage Unit         : 1V
+Capacitance Unit     : 1fF
+Time Unit            : 1ns
+Temperature Unit     : 1C
+Dynamic Power Unit   : 1pW
+Leakage Power Unit   : 1pW
+Warning: No valid clocks available in mode 'Normal'. Setting clock frequency to 1 GHz. (POW-034)
+
+Switched supply net power scaling:
+scaling for leakage power
+
+Supply nets:
+VDD (power) probability 1.00 (default)
+VSS (ground) probability 1.00 (default)
+Warning: Power table extrapolation (extrapolation mode) for port A1 on cell ctmi_2107 for parameter Tinp. Lowest table value = 0.003000, highest table value = 0.133000, value = 0.000000 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port X on cell ctmi_2107 for parameter Tinp. Lowest table value = 0.003000, highest table value = 0.133000, value = 0.000000 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port CK on cell clock_gate_dut_fifo_INST/fifo_data_r_reg_2 for parameter Tinp. Lowest table value = 0.003000, highest table value = 0.133000, value = 0.000000 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port CK on cell clock_gate_dut_fifo_INST/fifo_data_r_reg_3 for parameter Tinp. Lowest table value = 0.003000, highest table value = 0.133000, value = 0.000000 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port CK on cell clock_gate_dut_fifo_INST/fifo_rptr_r_reg for parameter Tinp. Lowest table value = 0.003000, highest table value = 0.133000, value = 0.000000 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port Q on cell clock_gate_dut_fifo_INST/fifo_rptr_r_reg for parameter Tinp. Lowest table value = 0.003000, highest table value = 0.133000, value = 0.000000 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port A1 on cell ctmi_2111 for parameter Tinp. Lowest table value = 0.003000, highest table value = 0.133000, value = 0.002956 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port X on cell ctmi_2111 for parameter Tinp. Lowest table value = 0.003000, highest table value = 0.133000, value = 0.002956 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port CK on cell clock_gate_dut_input_channel_control_2_INST/in_data_arb_r_reg for parameter Tinp. Lowest table value = 0.003000, highest table value = 0.133000, value = 0.000000 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port Q on cell clock_gate_dut_input_channel_control_2_INST/in_data_arb_r_reg for parameter Tinp. Lowest table value = 0.003000, highest table value = 0.133000, value = 0.000000 (POW-046)
+
+  Cell Internal Power    = 1.31e+07 pW ( 76.6%)
+  Net Switching Power    = 3.99e+06 pW ( 23.4%)
+Total Dynamic Power      = 1.71e+07 pW (100.0%)
+
+Cell Leakage Power       = 3.62e+05 pW
+
+
+  Attributes
+  ----------
+      u  -  User defined power group
+
+Power Group         Internal Power        Switching Power          Leakage Power            Total Power    (   %  )    Attrs
+-----------------------------------------------------------------------------------------------------------------------------
+io_pad                    0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+memory                    0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+black_box                 0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+clock_network             0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+register                  0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+sequential                1.11e+07               7.68e+05               1.71e+05               1.21e+07    ( 69.3%)         
+combinational             1.94e+06               3.22e+06               1.91e+05               5.36e+06    ( 30.7%)         
+-----------------------------------------------------------------------------------------------------------------------------
+Total                     1.31e+07 pW            3.99e+06 pW            3.62e+05 pW            1.74e+07 pW
+1

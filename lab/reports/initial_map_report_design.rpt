@@ -1,0 +1,75 @@
+****************************************
+Report : design
+Design : dut_toplevel
+Version: V-2023.12
+Date   : Wed May 28 12:36:05 2025
+****************************************
+
+Total number of std cells in library : 860
+Total number of dont_use lib cells   : 67
+Total number of dont_touch lib cells : 17
+Total number of buffers              : 59
+Total number of inverters            : 46
+Total number of flip-flops           : 173
+Total number of latches              : 45
+Total number of ICGs                 : 30
+
+Cell Instance Type  Count         Area
+--------------------------------------
+TOTAL LEAF CELLS     1213      906.692
+unit                 1213      906.692
+Standard cells       1213      906.692
+unit                 1213      906.692
+Hard macro cells        0        0.000
+unit                 1213      906.692
+Soft macro cells        0        0.000
+unit                 1213      906.692
+Always on cells         0        0.000
+unit                 1213      906.692
+Physical only           0        0.000
+unit                 1213      906.692
+Fixed cells             0        0.000
+unit                 1213      906.692
+Moveable cells       1213      906.692
+unit                 1213      906.692
+Placed cells            0        0.000
+unit                 1213      906.692
+Sequential            339      431.124
+unit                 1213      906.692
+Buffer/inverter        59       10.478
+unit                 1213      906.692
+ICG cells              11        8.791
+unit                 1213      906.692
+
+Logic Hierarchies                    : 1
+Design Masters count                 : 23
+Total Flat nets count                : 1644
+Total FloatingNets count             : 1
+Total no of Ports                    : 170
+Number of Master Clocks in design    : 0
+Number of Generated Clocks in design : 0
+Number of Path Groups in design      : 6 (0 of them Non Default)
+Number of Scan Chains in design      : 0
+List of Modes                        : Normal
+List of Corners                      : Typical
+List of Scenarios                    : Normal_Typical
+
+Core Area                            : 0.000
+Chip Area                            : 0.000
+Total Site Row Area                  : 0.000
+Number of Blockages                  : 0
+Total area of Blockages              : 0.000
+Number of Power Domains              : 1
+Number of Voltage Areas              : 1
+Number of Group Bounds               : 0
+Number of Exclusive MoveBounds       : 0
+Number of Hard or Soft MoveBounds    : 0
+Number of Multibit Registers         : 0
+Number of Multibit LS/ISO Cells      : 0
+Number of Top Level RP Groups        : 0
+Number of Tech Layers                : 64 (54 of them have unknown routing dir.)
+
+Total wire length                    : 0.00 micron
+Total number of wires                : 0
+Total number of contacts             : 0
+1
