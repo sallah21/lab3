@@ -6,7 +6,123 @@ Report : timing
         -report_by design
 Design : dut_toplevel
 Version: V-2023.12
-Date   : Wed May 28 12:45:16 2025
+Date   : Sat May 31 13:46:37 2025
 ****************************************
-No paths.
+
+  Startpoint: dut_fifo_INST/fifo_rptr_r_reg[0] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: math_wrapper_INST/out_data_r_reg[34] (rising edge-triggered flip-flop clocked by clk)
+  Mode: Normal
+  Corner: Typical
+  Scenario: Normal_Typical
+  Path Group: clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  dut_fifo_INST/fifo_rptr_r_reg[0]/CK (SAEDRVT14_FSDPRBQ_V2_1)
+                                                   0.00      0.00 r
+  dut_fifo_INST/fifo_rptr_r_reg[0]/Q (SAEDRVT14_FSDPRBQ_V2_1)
+                                                   0.03      0.03 f
+  phfnr_buf_413/X (SAEDRVT14_INV_S_0P5)            0.01      0.04 r
+  ctmi_2073/X (SAEDRVT14_OAI22_0P5)                0.01      0.05 f
+  ctmi_2072/X (SAEDRVT14_OAI21_0P5)                0.01      0.06 r
+  ctmi_2070/X (SAEDRVT14_AOI21_0P75)               0.01      0.07 f
+  ctmi_2076/X (SAEDRVT14_ND2_CDC_1)                0.01      0.08 r
+  ctmi_2081/X (SAEDRVT14_OAI21_0P5)                0.02      0.10 f
+  phfnr_buf_415/X (SAEDRVT14_INV_0P5)              0.01      0.11 r
+  ctmi_2079/X (SAEDRVT14_NR2_1)                    0.01      0.12 f
+  ctmi_2096/X (SAEDRVT14_NR2_1)                    0.01      0.13 r
+  ctmi_2094/X (SAEDRVT14_OAI21_0P5)                0.01      0.15 f
+  ctmi_333/X (SAEDRVT14_NR4_0P75)                  0.08      0.23 r
+  phfnr_buf_417/X (SAEDRVT14_INV_0P5)              0.03      0.26 f
+  ctmi_332/X (SAEDRVT14_AN2B_MM_4)                 0.04      0.29 f
+  ctmi_345/X (SAEDRVT14_AOI222_1)                  0.06      0.36 r
+  DP_OP_33_12155_941_J1/ctmi_2294/X (SAEDRVT14_NR2_1)
+                                                   0.02      0.38 f
+  DP_OP_33_12155_941_J1/U_399/S (SAEDRVT14_ADDH_0P5)
+                                                   0.03      0.41 r
+  DP_OP_33_12155_941_J1/U_401/CO (SAEDRVT14_ADDF_V1_0P5)
+                                                   0.03      0.43 r
+  DP_OP_33_12155_941_J1/U_405/S (SAEDRVT14_ADDF_V1_0P5)
+                                                   0.04      0.48 f
+  DP_OP_33_12155_941_J1/U_678/CO (SAEDRVT14_ADDF_V1_0P5)
+                                                   0.03      0.51 f
+  DP_OP_33_12155_941_J1/U_680/CO (SAEDRVT14_ADDF_V1_0P5)
+                                                   0.02      0.53 f
+  DP_OP_33_12155_941_J1/U_683/CO (SAEDRVT14_ADDF_V1_0P5)
+                                                   0.02      0.55 f
+  DP_OP_33_12155_941_J1/U_685/CO (SAEDRVT14_ADDF_V1_0P5)
+                                                   0.02      0.58 f
+  DP_OP_33_12155_941_J1/U_688/CO (SAEDRVT14_ADDF_V1_0P5)
+                                                   0.02      0.60 f
+  DP_OP_33_12155_941_J1/U_690/CO (SAEDRVT14_ADDF_V1_0P5)
+                                                   0.02      0.63 f
+  DP_OP_33_12155_941_J1/U_693/CO (SAEDRVT14_ADDF_V1_0P5)
+                                                   0.02      0.65 f
+  DP_OP_33_12155_941_J1/U_695/CO (SAEDRVT14_ADDF_V1_0P5)
+                                                   0.03      0.68 f
+  DP_OP_33_12155_941_J1/U_698/CO (SAEDRVT14_ADDF_V1_0P5)
+                                                   0.03      0.71 f
+  DP_OP_33_12155_941_J1/U_700/CO (SAEDRVT14_ADDF_V1_0P5)
+                                                   0.03      0.73 f
+  DP_OP_33_12155_941_J1/U_703/CO (SAEDRVT14_ADDF_V1_0P5)
+                                                   0.03      0.76 f
+  DP_OP_33_12155_941_J1/U_705/CO (SAEDRVT14_ADDF_V1_0P5)
+                                                   0.03      0.79 f
+  DP_OP_33_12155_941_J1/U_708/CO (SAEDRVT14_ADDF_V1_0P5)
+                                                   0.03      0.81 f
+  DP_OP_33_12155_941_J1/U_710/CO (SAEDRVT14_ADDF_V1_0P5)
+                                                   0.03      0.84 f
+  DP_OP_33_12155_941_J1/U_713/CO (SAEDRVT14_ADDF_V1_0P5)
+                                                   0.03      0.87 f
+  DP_OP_33_12155_941_J1/U_715/CO (SAEDRVT14_ADDF_V1_0P5)
+                                                   0.03      0.89 f
+  DP_OP_33_12155_941_J1/U_718/CO (SAEDRVT14_ADDF_V1_0P5)
+                                                   0.03      0.92 f
+  DP_OP_33_12155_941_J1/U_720/CO (SAEDRVT14_ADDF_V1_0P5)
+                                                   0.03      0.95 f
+  DP_OP_33_12155_941_J1/U_723/CO (SAEDRVT14_ADDF_V1_0P5)
+                                                   0.03      0.98 f
+  DP_OP_33_12155_941_J1/U_725/CO (SAEDRVT14_ADDF_V1_0P5)
+                                                   0.03      1.01 f
+  DP_OP_33_12155_941_J1/U_728/CO (SAEDRVT14_ADDF_V1_0P5)
+                                                   0.03      1.03 f
+  DP_OP_33_12155_941_J1/U_730/CO (SAEDRVT14_ADDF_V1_0P5)
+                                                   0.03      1.06 f
+  DP_OP_33_12155_941_J1/U_733/CO (SAEDRVT14_ADDF_V1_0P5)
+                                                   0.03      1.09 f
+  DP_OP_33_12155_941_J1/U_735/CO (SAEDRVT14_ADDF_V1_0P5)
+                                                   0.03      1.11 f
+  DP_OP_33_12155_941_J1/U_738/CO (SAEDRVT14_ADDF_V1_0P5)
+                                                   0.03      1.14 f
+  DP_OP_33_12155_941_J1/U_740/CO (SAEDRVT14_ADDF_V1_0P5)
+                                                   0.03      1.17 f
+  DP_OP_33_12155_941_J1/U_743/CO (SAEDRVT14_ADDF_V1_0P5)
+                                                   0.03      1.19 f
+  DP_OP_33_12155_941_J1/U_745/CO (SAEDRVT14_ADDF_V1_0P5)
+                                                   0.03      1.22 f
+  DP_OP_33_12155_941_J1/U_748/CO (SAEDRVT14_ADDF_V1_0P5)
+                                                   0.02      1.24 f
+  DP_OP_33_12155_941_J1/U_750/S (SAEDRVT14_ADDF_V1_0P5)
+                                                   0.04      1.28 r
+  math_wrapper_INST/out_data_r_reg[34]/D (SAEDRVT14_FSDPRBQ_V2_1)
+                                                   0.00      1.28 r
+  data arrival time                                          1.28
+
+  clock clk (rise edge)                            3.00      3.00
+  clock network delay (ideal)                      0.00      3.00
+  math_wrapper_INST/out_data_r_reg[34]/CK (SAEDRVT14_FSDPRBQ_V2_1)
+                                                   0.00      3.00 r
+  library setup time                              -0.02      2.98
+  data required time                                         2.98
+  ------------------------------------------------------------------------
+  data required time                                         2.98
+  data arrival time                                         -1.28
+  ------------------------------------------------------------------------
+  slack (MET)                                                1.70
+
+
 1

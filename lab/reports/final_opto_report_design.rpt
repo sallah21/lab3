@@ -2,7 +2,7 @@
 Report : design
 Design : dut_toplevel
 Version: V-2023.12
-Date   : Wed May 28 12:57:11 2025
+Date   : Sat May 31 13:47:35 2025
 ****************************************
 
 Total number of std cells in library : 860
@@ -16,39 +16,39 @@ Total number of ICGs                 : 30
 
 Cell Instance Type  Count         Area
 --------------------------------------
-TOTAL LEAF CELLS     1217      915.928
-unit                 1217      915.928
-Standard cells       1217      915.928
-unit                 1217      915.928
+TOTAL LEAF CELLS     1213      914.507
+unit                 1213      914.507
+Standard cells       1213      914.507
+unit                 1213      914.507
 Hard macro cells        0        0.000
-unit                 1217      915.928
+unit                 1213      914.507
 Soft macro cells        0        0.000
-unit                 1217      915.928
+unit                 1213      914.507
 Always on cells         0        0.000
-unit                 1217      915.928
+unit                 1213      914.507
 Physical only           0        0.000
-unit                 1217      915.928
+unit                 1213      914.507
 Fixed cells             0        0.000
-unit                 1217      915.928
-Moveable cells       1217      915.928
-unit                 1217      915.928
-Placed cells         1217      915.928
-unit                 1217      915.928
+unit                 1213      914.507
+Moveable cells       1213      914.507
+unit                 1213      914.507
+Placed cells         1213      914.507
+unit                 1213      914.507
 Sequential            339      431.124
-unit                 1217      915.928
-Buffer/inverter        37        7.814
-unit                 1217      915.928
+unit                 1213      914.507
+Buffer/inverter        34        7.193
+unit                 1213      914.507
 ICG cells              11        8.791
-unit                 1217      915.928
+unit                 1213      914.507
 
 Logic Hierarchies                    : 0
-Design Masters count                 : 34
-Total Flat nets count                : 1649
+Design Masters count                 : 35
+Total Flat nets count                : 1645
 Total FloatingNets count             : 0
 Total no of Ports                    : 170
-Number of Master Clocks in design    : 0
+Number of Master Clocks in design    : 1
 Number of Generated Clocks in design : 0
-Number of Path Groups in design      : 6 (0 of them Non Default)
+Number of Path Groups in design      : 7 (1 of them Non Default)
 Number of Scan Chains in design      : 0
 List of Modes                        : Normal
 List of Corners                      : Typical

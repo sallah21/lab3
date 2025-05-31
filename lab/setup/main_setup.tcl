@@ -6,7 +6,7 @@ set LabRootDir			"[pwd]/../../.."     ; # root dir for the labs
 
 set LabDir				"${LabRootDir}/lab" ; # directory for lab exercises
 set SrcDir				"${LabRootDir}/src"  ; # directory for source files (RTL, SDC)
-set TechLibDir			"/eda/synopsys/files/FC_Labs/common" ; # technology library path
+set TechLibDir			"${LabRootDir}/tech" ; # technology library path
 
 set SetupDir			"${LabDir}/setup"   ; # directory with setup files
 

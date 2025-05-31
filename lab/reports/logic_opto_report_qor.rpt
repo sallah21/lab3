@@ -2,9 +2,23 @@
 Report : qor
 Design : dut_toplevel
 Version: V-2023.12
-Date   : Wed May 28 12:41:28 2025
+Date   : Sat May 31 13:46:29 2025
 ****************************************
 
+
+Scenario           'Normal_Typical'
+Timing Path Group  'clk'
+----------------------------------------
+Levels of Logic:                     48
+Critical Path Length:              1.30
+Critical Path Slack:               1.68
+Critical Path Clk Period:          3.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+Worst Hold Violation:              0.00
+Total Hold Violation:              0.00
+No. of Hold Violations:               0
+----------------------------------------
 
 
 Cell Count
@@ -38,25 +52,25 @@ Macro Count:                          0
 
 Area
 ----------------------------------------
-Combinational Area:              473.93
+Combinational Area:              473.13
 Noncombinational Area:           431.12
 Buf/Inv Area:                      4.08
 Total Buffer Area:                 0.00
 Total Inverter Area:               4.08
 Macro/Black Box Area:              0.00
 Net Area:                             0
-Net XLength:                    4756.27
-Net YLength:                    5182.76
+Net XLength:                    5031.09
+Net YLength:                    5264.96
 ----------------------------------------
-Cell Area (netlist):                            905.05
-Cell Area (netlist and physical only):          905.05
-Net Length:                     9939.03
+Cell Area (netlist):                            904.25
+Cell Area (netlist and physical only):          904.25
+Net Length:                    10296.05
 
 
 Design Rules
 ----------------------------------------
 Total Number of Nets:              1608
-Nets with Violations:                 2
+Nets with Violations:                 1
 Max Trans Violations:                 0
 Max Cap Violations:                   0
 ----------------------------------------

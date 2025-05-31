@@ -2,9 +2,23 @@
 Report : qor
 Design : dut_toplevel
 Version: V-2023.12
-Date   : Wed May 28 12:47:35 2025
+Date   : Sat May 31 13:46:43 2025
 ****************************************
 
+
+Scenario           'Normal_Typical'
+Timing Path Group  'clk'
+----------------------------------------
+Levels of Logic:                     48
+Critical Path Length:              1.29
+Critical Path Slack:               1.69
+Critical Path Clk Period:          3.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+Worst Hold Violation:              0.00
+Total Hold Violation:              0.00
+No. of Hold Violations:               0
+----------------------------------------
 
 
 Cell Count
@@ -38,25 +52,25 @@ Macro Count:                          0
 
 Area
 ----------------------------------------
-Combinational Area:              484.98
+Combinational Area:              484.00
 Noncombinational Area:           431.12
-Buf/Inv Area:                     14.70
-Total Buffer Area:                10.52
-Total Inverter Area:               4.17
+Buf/Inv Area:                     14.56
+Total Buffer Area:                10.43
+Total Inverter Area:               4.13
 Macro/Black Box Area:              0.00
 Net Area:                             0
-Net XLength:                    4823.85
-Net YLength:                    5213.24
+Net XLength:                    4829.16
+Net YLength:                    5072.38
 ----------------------------------------
-Cell Area (netlist):                            916.11
-Cell Area (netlist and physical only):          916.11
-Net Length:                    10037.09
+Cell Area (netlist):                            915.13
+Cell Area (netlist and physical only):          915.13
+Net Length:                     9901.53
 
 
 Design Rules
 ----------------------------------------
 Total Number of Nets:              1621
-Nets with Violations:                 2
+Nets with Violations:                 1
 Max Trans Violations:                 0
 Max Cap Violations:                   0
 ----------------------------------------

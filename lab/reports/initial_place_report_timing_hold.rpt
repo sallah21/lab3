@@ -6,7 +6,41 @@ Report : timing
         -report_by design
 Design : dut_toplevel
 Version: V-2023.12
-Date   : Wed May 28 12:45:23 2025
+Date   : Sat May 31 13:46:37 2025
 ****************************************
-No paths.
+
+  Startpoint: math_wrapper_INST/out_data_r_reg[18] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: dut_fifo_INST/fifo_data_r_reg[0][21] (rising edge-triggered flip-flop clocked by clk)
+  Mode: Normal
+  Corner: Typical
+  Scenario: Normal_Typical
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  math_wrapper_INST/out_data_r_reg[18]/CK (SAEDRVT14_FSDPRBQ_V2_1)
+                                                   0.00      0.00 r
+  math_wrapper_INST/out_data_r_reg[18]/Q (SAEDRVT14_FSDPRBQ_V2_1)
+                                                   0.02      0.02 f
+  dut_fifo_INST/fifo_data_r_reg[0][21]/D (SAEDRVT14_FSDPRBQ_V2_0P5)
+                                                   0.00      0.02 f
+  data arrival time                                          0.02
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  dut_fifo_INST/fifo_data_r_reg[0][21]/CK (SAEDRVT14_FSDPRBQ_V2_0P5)
+                                                   0.00      0.00 r
+  library hold time                               -0.01     -0.01
+  data required time                                        -0.01
+  ------------------------------------------------------------------------
+  data required time                                        -0.01
+  data arrival time                                         -0.02
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.03
+
+
 1
