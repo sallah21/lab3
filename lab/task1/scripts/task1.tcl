@@ -42,6 +42,8 @@ redirect -file ${ReportsDir}/${StageName}_report_area.rpt {report_area}
 redirect -file ${ReportsDir}/${StageName}_report_qor.rpt {report_qor}
 redirect -file ${ReportsDir}/${StageName}_report_design.rpt {report_design}
 
+
+
 set StageName logic_opto
 compile_fusion -from logic_opto -to logic_opto
 redirect -file ${ReportsDir}/${StageName}_report_power.rpt\
@@ -114,9 +116,9 @@ redirect -file ${ReportsDir}/${StageName}_report_area.rpt {report_area}
 redirect -file ${ReportsDir}/${StageName}_report_qor.rpt {report_qor}
 redirect -file ${ReportsDir}/${StageName}_report_design.rpt {report_design}
 
-# check legality, save block and close
-check_legality
-save_block
-save_lib
-close_blocks
-close_lib
+# # check legality, save block and close
+# check_legality
+# save_block
+# save_lib
+# close_blocks
+# close_lib

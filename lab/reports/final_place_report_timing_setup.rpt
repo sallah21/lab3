@@ -6,7 +6,7 @@ Report : timing
         -report_by design
 Design : dut_toplevel
 Version: V-2023.12
-Date   : Sat May 31 13:47:22 2025
+Date   : Wed Jun  4 10:38:51 2025
 ****************************************
 
   Startpoint: dut_fifo_INST/fifo_wptr_r_reg[0] (rising edge-triggered flip-flop clocked by clk)

@@ -4,7 +4,7 @@ Report : power
         -significant_digits 2
 Design : dut_toplevel
 Version: V-2023.12
-Date   : Sat May 31 13:46:42 2025
+Date   : Wed Jun  4 10:38:09 2025
 ****************************************
 Information: Activity propagation will be performed for scenario Normal_Typical.
 Information: Doing activity propagation for mode 'Normal' and corner 'Typical' with effort level 'medium'. (POW-024)
@@ -51,16 +51,16 @@ scaling for leakage power
 Supply nets:
 VDD (power) probability 1.00 (default)
 VSS (ground) probability 1.00 (default)
-Warning: Power table extrapolation (extrapolation mode) for port CK on cell dut_input_channel_control_1_INST/in_valid_arb_r_reg for parameter Tinp. Lowest table value = 0.003000, highest table value = 0.133000, value = 0.000000 (POW-046)
-Warning: Power table extrapolation (extrapolation mode) for port Q on cell dut_input_channel_control_1_INST/in_valid_arb_r_reg for parameter Tinp. Lowest table value = 0.003000, highest table value = 0.133000, value = 0.000000 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port CK on cell clock_gate_dut_fifo_INST/fifo_rptr_r_reg for parameter Tinp. Lowest table value = 0.003000, highest table value = 0.133000, value = 0.000000 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port Q on cell clock_gate_dut_fifo_INST/fifo_rptr_r_reg for parameter Tinp. Lowest table value = 0.003000, highest table value = 0.133000, value = 0.000000 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port D on cell dut_input_channel_control_0_INST/in_data_arb_r_reg[35] for parameter Tinp. Lowest table value = 0.003000, highest table value = 0.133000, value = 0.000000 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port CK on cell dut_input_channel_control_0_INST/in_data_arb_r_reg[35] for parameter Tinp. Lowest table value = 0.003000, highest table value = 0.133000, value = 0.000000 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port Q on cell dut_input_channel_control_0_INST/in_data_arb_r_reg[35] for parameter Tinp. Lowest table value = 0.003000, highest table value = 0.133000, value = 0.000000 (POW-046)
 Warning: Power table extrapolation (extrapolation mode) for port D on cell dut_input_channel_control_2_INST/in_data_arb_r_reg[10] for parameter Tinp. Lowest table value = 0.003000, highest table value = 0.133000, value = 0.000000 (POW-046)
 Warning: Power table extrapolation (extrapolation mode) for port CK on cell dut_input_channel_control_2_INST/in_data_arb_r_reg[10] for parameter Tinp. Lowest table value = 0.003000, highest table value = 0.133000, value = 0.000000 (POW-046)
 Warning: Power table extrapolation (extrapolation mode) for port Q on cell dut_input_channel_control_2_INST/in_data_arb_r_reg[10] for parameter Tinp. Lowest table value = 0.003000, highest table value = 0.133000, value = 0.000000 (POW-046)
 Warning: Power table extrapolation (extrapolation mode) for port D on cell dut_input_channel_control_2_INST/in_data_arb_r_reg[9] for parameter Tinp. Lowest table value = 0.003000, highest table value = 0.133000, value = 0.000000 (POW-046)
-Warning: Power table extrapolation (extrapolation mode) for port CK on cell dut_input_channel_control_2_INST/in_data_arb_r_reg[9] for parameter Tinp. Lowest table value = 0.003000, highest table value = 0.133000, value = 0.000000 (POW-046)
-Warning: Power table extrapolation (extrapolation mode) for port Q on cell dut_input_channel_control_2_INST/in_data_arb_r_reg[9] for parameter Tinp. Lowest table value = 0.003000, highest table value = 0.133000, value = 0.000000 (POW-046)
-Warning: Power table extrapolation (extrapolation mode) for port D on cell dut_input_channel_control_2_INST/in_data_arb_r_reg[8] for parameter Tinp. Lowest table value = 0.003000, highest table value = 0.133000, value = 0.000000 (POW-046)
-Warning: Power table extrapolation (extrapolation mode) for port CK on cell dut_input_channel_control_2_INST/in_data_arb_r_reg[8] for parameter Tinp. Lowest table value = 0.003000, highest table value = 0.133000, value = 0.000000 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port CK on cell dut_fifo_INST/fifo_data_r_reg[1][20] for parameter Tinp. Lowest table value = 0.003000, highest table value = 0.133000, value = 0.000000 (POW-046)
 
   Cell Internal Power    = 2.75e+07 pW ( 62.5%)
   Net Switching Power    = 1.65e+07 pW ( 37.5%)
